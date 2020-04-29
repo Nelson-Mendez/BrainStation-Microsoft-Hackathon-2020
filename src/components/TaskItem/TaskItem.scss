@@ -1,0 +1,36 @@
+.item {
+    height: 65px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    padding: 1rem;
+
+    &--checked {
+        @extend .item;
+        background-color: #F3F2F1;
+    }
+
+    &__box {
+        box-sizing: border-box;
+        height: 1rem;
+        width: 1rem;
+        border: 1px solid #464771;
+
+        &--checked {
+            @extend .item__box;
+            background-color: #464771;
+        }
+    }
+
+    &__title {
+        font-size: 1rem;
+        color: black;
+        margin-left: 0.8rem;
+        font-weight: normal;
+        &--checked {
+            @extend .item__title;
+            color: #464771;
+        }
+    }
+}
