@@ -37,6 +37,8 @@ export default class Info extends React.Component {
     };
   }
 
+  //toChangeBranchName
+
   //In order to track progress check how many items in the list are checked and unchecked
 
   updateChecklist = (position) =>{
@@ -50,6 +52,7 @@ export default class Info extends React.Component {
       }
     )
   }
+
 
   render() {
     return (
