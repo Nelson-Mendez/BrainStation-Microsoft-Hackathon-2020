@@ -1,6 +1,6 @@
 import React from 'react';
 import './header.scss';
-import icon from '../../assets/svg/icon.svg'
+import icon from '../../assets/svg/userIconRound.svg'
 
 export default function Header () {
 
