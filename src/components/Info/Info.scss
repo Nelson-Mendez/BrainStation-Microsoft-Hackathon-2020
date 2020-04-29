@@ -1,6 +1,6 @@
 .info {
   //   height: 100vh;
-  background-color: #F3F2F1;
+  background-color: #f3f2f1;
   color: #fff;
   //   width: 81vw;
   display: flex;
@@ -17,9 +17,11 @@
   &__bar {
     height: 100px;
     width: 100%;
-    background-color: #F3F2F1;
-    border-bottom: 2px solid #E1DFDD;
+    background-color: #f3f2f1;
+    border-bottom: 2px solid #e1dfdd;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
   }
 
   &__container {
@@ -34,7 +36,7 @@
   padding: 0;
   &__heading-box {
     height: 68px;
-    background-color: #F3F2F1;
+    background-color: #f3f2f1;
     display: flex;
     justify-content: space-between;
     width: 100%;

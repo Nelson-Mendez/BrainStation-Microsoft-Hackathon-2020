@@ -1,0 +1,26 @@
+.progress {
+  margin: auto;
+  height: 65px;
+  background-color: hsl(234, 14%, 86%);
+  margin-bottom: 10px;
+  &__in {
+    background-color: #323247;
+    height: 65px;
+    width: 30%;
+  }
+  &__wrapper {
+    width: 45%;
+    color: #000;
+    margin: 5%;
+    margin-top: 2rem;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+.border {
+  border-top: 1px solid #000;
+
+  margin-bottom: 20px;
+}
