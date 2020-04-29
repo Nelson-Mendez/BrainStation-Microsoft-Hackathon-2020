@@ -7,6 +7,7 @@ import file from '../../assets/svg/files.svg';
 import gear from '../../assets/svg/gear.svg';
 
 import question from '../../assets/svg/question.svg';
+import phone from '../../assets/svg/phone.svg';
 import Icon from "../Icon/Icon";
 
 const tabList = [
@@ -29,7 +30,8 @@ const tabList = [
   },
   {
     image: gear,
-    title: "Productivity"
+    title: "Productivity",
+    hover: true
   }
 ]
 
@@ -37,6 +39,10 @@ const helpList = [
   {
     image: question,
     title: "Help"
+  },
+  {
+    image: phone,
+    title: ''
   }
 ]
 

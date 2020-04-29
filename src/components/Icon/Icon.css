@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+.icon, .icon--hovered, .icon:hover {
+  width: 100%;
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.icon:last-of-type, .icon--hovered:last-of-type {
+  margin: 0;
+}
+
+.icon--hovered, .icon:hover {
+  background-color: #2a2c4d;
+  border-left: 9px solid #dadaed;
+}
+
+.icon__img {
+  width: 35px;
+}
+
+.icon__title {
+  font-size: 13px;
+  color: #d6d6d6;
+  font-weight: normal;
+  margin: 0;
+}
+/*# sourceMappingURL=Icon.css.map */
