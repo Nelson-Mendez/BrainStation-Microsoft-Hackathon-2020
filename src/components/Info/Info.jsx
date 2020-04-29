@@ -21,6 +21,8 @@ let list = [
   }
 ]
 
+
+
 export default function Info(props) {
   const [modalShow, setModalShow] = React.useState(false);
   //   const [currModal, setCurrModal] = React.useState({ response: null });
