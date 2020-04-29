@@ -12,6 +12,7 @@ export default class Info extends React.Component {
     this.state = {
       modalShow: false,
       setModalShow: false,
+      progress: 0,
       list: [
         {
           checked: true,
@@ -41,20 +42,25 @@ export default class Info extends React.Component {
 
   //In order to track progress check how many items in the list are checked and unchecked
 
-  updateChecklist = (position) =>{
+  updateChecklist = (position) => {
     //This is passed down to each individual Task Item so when the box is pressed
     //it'll change the list items checked value here
-    let updated = this.state.list.find(item => item.position === position);
+    let updated = this.state.list.find((item) => item.position === position);
     updated.checked = !updated.checked;
-    this.setState(
-      {
-        list: this.state.list
-      }
-    )
-  }
-
+    this.setState({
+      list: this.state.list,
+    });
+  };
 
   render() {
+    function updateProgress() {
+      let x;
+      for (let i = 0; i < this.state.list.length; i++) {
+        x += this.state.list.length.checked;
+      }
+      this.setState({ progress: this.state.list.length / x });
+    }
+
     return (
       <section className="info">
         {this.props.children}
@@ -80,7 +86,11 @@ export default class Info extends React.Component {
               </li>
 
               {this.state.list.map((item) => (
-                <TaskItem task={item} check={this.updateChecklist} />
+                <TaskItem
+                  task={item}
+                  onClick={() => updateProgress()}
+                  check={this.updateChecklist}
+                />
               ))}
             </ul>
           </div>
