@@ -12,28 +12,29 @@ export default class MyTeam extends React.Component {
         return(
             <div className="myTeam">
                 <div className="myTeam__header">
-                    <img></img>
-                    <h3>My Team</h3>
-                    <p>{(userData.length + 1)} members</p>
+                    <div className="myTeam__icon">C</div>
+                    <h3 className="myTeam__title">My Team</h3>
+                    <p className="myTeam__teamSize">{(userData.length + 1)} members</p>
                 </div>
 
                 <div className="myTeam__information">
                     <div className="myTeam__members">
-                        <h4>Other Team Members</h4>
-                         {userData.map(user => 
-                            <h5>{user.name} ({user.status})</h5>
+                        <h4 className="myTeam__subHeader">Other Team Members</h4>
+                         {userData.map(user => <>
+                            <h5 className="myTeam__name">{user.name} {user.status}</h5>
+                            <p className="myTeam__position">{user.job}</p> </>
                         )}
                     </div>
 
                     <div className="myTeam__buddy">
-                        <h4>Buddy for today</h4>
-                        <p>{this.state.buddy.name}</p>
-                        <p>{this.state.buddy.name}'s Progress</p>
-                        <p>{this.state.buddy.name}'s Tasks</p>
+                        <h4 className="myTeam__subHeader">Acountabilibuddy</h4>
+                        <p  className="myTeam__name">{this.state.buddy.name}</p>
+                        <p  className="myTeam__position">{this.state.buddy.job}</p>
+                        <p className="myTeam__dropDown">{this.state.buddy.name}'s Progress</p>
+                        <p className="myTeam__dropDown">{this.state.buddy.name}'s Tasks</p>
 
                         <div className="myTeam__buttons">
-                            <button>Message</button>
-                            <button>Encourage</button>
+                            <button className="myTeam__message">Message</button>
                         </div>
                     </div>
                 </div>
