@@ -39,6 +39,21 @@ export default class Info extends React.Component {
 
   //toChangeBranchName
 
+  //In order to track progress check how many items in the list are checked and unchecked
+
+  updateChecklist = (position) =>{
+    //This is passed down to each individual Task Item so when the box is pressed
+    //it'll change the list items checked value here
+    let updated = this.state.list.find(item => item.position === position);
+    updated.checked = !updated.checked;
+    this.setState(
+      {
+        list: this.state.list
+      }
+    )
+  }
+
+
   render() {
     return (
       <section className="info">
@@ -65,7 +80,7 @@ export default class Info extends React.Component {
               </li>
 
               {this.state.list.map((item) => (
-                <TaskItem task={item} />
+                <TaskItem task={item} check={this.updateChecklist} />
               ))}
             </ul>
           </div>

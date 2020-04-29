@@ -1,0 +1,103 @@
+.header {
+  height: 80px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #464772;
+  padding: 0 1rem 0 2.5rem;
+  position: relative;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__title {
+  margin-top: 10px;
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-left: 50px;
+}
+
+.header__search {
+  margin-left: 1rem;
+  height: 3rem;
+  width: 45vw;
+  padding-left: 3rem;
+  background-color: #D6D7E0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.header__search::-webkit-input-placeholder {
+  color: black;
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  color: #323232;
+}
+
+.header__search:-ms-input-placeholder {
+  color: black;
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  color: #323232;
+}
+
+.header__search::-ms-input-placeholder {
+  color: black;
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  color: #323232;
+}
+
+.header__search::placeholder {
+  color: black;
+  font-family: 'Segoe UI';
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  color: #323232;
+}
+/*# sourceMappingURL=header.css.map */
