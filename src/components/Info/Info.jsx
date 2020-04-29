@@ -12,6 +12,7 @@ export default class Info extends React.Component {
     this.state = {
       modalShow: false,
       setModalShow: false,
+      progress: 0,
       list: [
         {
           checked: true,
@@ -40,6 +41,14 @@ export default class Info extends React.Component {
   //toChangeBranchName
 
   render() {
+    function updateProgress() {
+      let x;
+      for (let i = 0; i < this.state.list.length; i++) {
+        x += this.state.list.length.checked;
+      }
+      this.setState({ progress: this.state.list.length / x });
+    }
+
     return (
       <section className="info">
         {this.props.children}
@@ -65,7 +74,7 @@ export default class Info extends React.Component {
               </li>
 
               {this.state.list.map((item) => (
-                <TaskItem task={item} />
+                <TaskItem task={item} onClick={() => updateProgress()} />
               ))}
             </ul>
           </div>
