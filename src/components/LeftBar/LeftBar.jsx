@@ -34,11 +34,11 @@ class Leftbar extends React.Component{
     return (
       <section className="leftbar">
         <h3 className="leftbar__title">Productivity</h3>
-        <div id='tasks' className="leftbar__box" onClick={this.props.toggle}>
+        <div id='tasks' className="leftbar__box" onClick={this.props.toggleTasks}>
           <img className="leftbar__img" src={tasks}/>
           <h5 className="leftbar__task">My Tasks</h5>
         </div>
-        <div id='teams' className="leftbar__box" onClick={this.props.toggle}>
+        <div id='teams' className="leftbar__box" onClick={this.props.toggleTeams}>
           <img className="leftbar__img" src={people}/>
           <h5 className="leftbar__task">My Teams</h5>
         </div>

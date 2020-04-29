@@ -21,7 +21,7 @@ export const userData = [
         name: "Carole Baskin",
         job: "Project Lead",
         status: "(Online)🟢",
-        list: ["Feed the tigers", "Clean the tiger cages", "Say hello to all the cute cats and kittens"]  
+        list: ["Feed the tigers", "Clean the tiger cages", "Say hey to all the cool cats and kittens"]  
     },
     {
         name: "Bob Ross",
