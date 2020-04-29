@@ -37,6 +37,8 @@ export default class Info extends React.Component {
     };
   }
 
+  //toChangeBranchName
+
   render() {
     return (
       <section className="info">
