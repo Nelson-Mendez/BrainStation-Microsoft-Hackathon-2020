@@ -6,33 +6,38 @@ import edit from "../../assets/svg/edit.svg";
 import TaskItem from "../TaskItem/TaskItem";
 import ModalInput from "../ModalInput/ModalInput";
 
-let list = [
-  { checked: true, title: "Email Account Manager about New Account" },
-  { checked: false, title: "Take a lunch break at 12:30 PM" },
-  {
-    checked: false,
-    title: "Hand off project mockups to Dev Team",
-  },
-  {
-    checked: false,
-    title: "30 Minute workout",
-  },
-];
-
 export default class Info extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       modalShow: false,
       setModalShow: false,
+      list: [
+        {
+          checked: true,
+          title: "Email Account Manager about New Account",
+          position: 0,
+        },
+        {
+          checked: false,
+          title: "Take a lunch break at 12:30 PM",
+          position: 1,
+        },
+        {
+          checked: false,
+          title: "Hand off project mockups to Dev Team",
+          position: 2,
+        },
+        {
+          checked: false,
+          title: "30 Minute workout",
+          position: 3,
+        },
+      ],
     };
   }
 
   render() {
-    const newTodo = (e) => {
-      e.preventDefault();
-      console.log(e.target[1].value);
-    };
     return (
       <section className="info">
         {this.props.children}
@@ -46,7 +51,7 @@ export default class Info extends React.Component {
                   <div
                     className="task__icon-box"
                     onClick={() => {
-                      this.setState({ setModalShow: true });
+                      this.setState({ modalShow: true });
                     }}
                   >
                     <img src={plus} />
@@ -56,7 +61,8 @@ export default class Info extends React.Component {
                   </div>
                 </div>
               </li>
-              {list.map((item) => (
+
+              {this.state.list.map((item) => (
                 <TaskItem task={item} />
               ))}
             </ul>
@@ -64,9 +70,17 @@ export default class Info extends React.Component {
         </div>
 
         <ModalInput
-          newTodo={this.newTodo}
+          newTodo={(e) => {
+            e.preventDefault();
+            this.state.list.push({
+              title: e.target[1].value,
+              checked: false,
+              position: this.state.list.length,
+            });
+            // console.log(newList);
+          }}
           show={this.state.modalShow}
-          onHide={() => this.setState({ setModalShow: false })}
+          onHide={() => this.setState({ modalShow: false })}
         />
       </section>
     );
