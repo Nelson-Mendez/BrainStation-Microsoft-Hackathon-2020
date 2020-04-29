@@ -7,13 +7,13 @@ import "./Main.scss";
 
 class Main extends Component {
   state = {
-    tasks: true
+    tasks: true,
   }
 
   toggle = () => {
     this.setState(
       {
-        tasks: !this.state.tasks
+        tasks: !this.state.tasks,
       }
     )
   }
@@ -21,10 +21,10 @@ class Main extends Component {
     return (
       <article className="asside">
         <Sidebar />
-        <Info>
-          <LeftBar toggle={this.toggle} tasks={this.state.tasks}/>
-          {/* <Info /> */}
-        </Info>
+        <LeftBar toggle={this.toggle} tasks={this.state.tasks}/>
+        {this.state.tasks && <Info />}
+        {!this.state.tasks && <MyTeam />}
+        {/* <Info /> */}
       </article>
     );
   }
