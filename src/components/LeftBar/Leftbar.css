@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.leftbar {
+  width: 19rem;
+  background-color: #fff;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftbar__title {
+  font-size: 1.5rem;
+  padding: 2rem 0 2rem 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.leftbar__box, .leftbar__box--highlight {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+
+.leftbar__box--highlight {
+  background-color: lightgray;
+}
+
+.leftbar__task {
+  font-weight: normal;
+  font-size: 1rem;
+  margin-left: 0.7rem;
+}
+
+.leftbar__img {
+  height: 100%;
+  width: 20px;
+  background-color: black;
+}
+/*# sourceMappingURL=Leftbar.css.map */
