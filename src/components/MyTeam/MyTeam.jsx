@@ -1,9 +1,8 @@
 import React from 'react';
 import {userData} from '../../mockData';
-import ellipsis from '../../assets/svg/ellipsis.svg';
-import icon from '../../assets/svg/userIconRound.svg'
 import arrow from '../../assets/svg/right-arrow.svg'
 import './MyTeam.scss';
+import SubHeader from '../SubHeader/SubHeader';
 
 export default class MyTeam extends React.Component {
 
@@ -30,12 +29,7 @@ export default class MyTeam extends React.Component {
         return(
             <div className="myTeam">
 
-                <div className="myTeam__header">
-                    <img src={icon} alt="" className="myTeam__icon"/>
-                    <h3 className="myTeam__title">My Team</h3>
-                    <p className="myTeam__teamSize">{(userData.length + 1)} members</p>
-                    <img src={ellipsis} alt="" className="ellipsis" />
-                </div>
+                <SubHeader userData={userData} title='My Team'/>
 
                 <div className="myTeam__information">
 
