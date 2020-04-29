@@ -5,7 +5,7 @@ import plus from "../../assets/svg/plus.svg";
 import edit from "../../assets/svg/edit.svg";
 import TaskItem from "../TaskItem/TaskItem";
 import ModalInput from "../ModalInput/ModalInput";
-
+import ProgressBar from "../ProgressBar/ProgressBar";
 export default class Info extends React.Component {
   constructor(props) {
     super(props);
@@ -93,6 +93,7 @@ export default class Info extends React.Component {
                 />
               ))}
             </ul>
+            <ProgressBar />
           </div>
         </div>
 
