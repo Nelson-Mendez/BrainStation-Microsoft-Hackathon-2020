@@ -1,0 +1,25 @@
+.myTeam {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f2f1;
+    color: black;
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__members{
+        flex-direction: column;
+    }
+
+    &__buddy {
+        flex-direction: column;
+    }
+}
