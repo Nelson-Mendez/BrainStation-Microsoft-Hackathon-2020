@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 .icon {
     width: 100%;
     height: 71px;
@@ -6,6 +10,19 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
+    cursor: pointer;
+    &:last-of-type {
+        margin: 0;
+    }
+
+    &--hovered {
+        @extend .icon;
+        background-color: #2a2c4d;
+        border-left: 9px solid #dadaed;
+    }
+    &:hover {
+        @extend .icon--hovered;
+    }
 
     &__img {
         width: 35px;
@@ -15,5 +32,6 @@
         font-size: 13px;
         color: #d6d6d6;
         font-weight: normal;
+        margin: 0;
     }
 }
