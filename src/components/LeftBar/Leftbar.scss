@@ -1,6 +1,45 @@
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .leftbar {
-  width: 19rem;
+  min-width: 19rem;
   //   height: 100vh;
   background-color: #fff;
   color: #000;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 1.5rem;
+    padding: 2rem 0 2rem 1rem;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+
+    &--highlight {
+      @extend .leftbar__box;
+      background-color: #e1dfdd;
+    }
+  }
+
+  &__task {
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin-left: 0.7rem;
+    padding: 0;
+  }
+
+  &__img {
+    height: 16px;
+    width: 16px;
+  }
 }
