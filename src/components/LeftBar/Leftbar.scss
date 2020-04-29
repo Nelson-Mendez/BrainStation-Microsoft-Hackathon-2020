@@ -5,7 +5,7 @@
 }
 
 .leftbar {
-  width: 19rem;
+  min-width: 19rem;
   //   height: 100vh;
   background-color: #fff;
   color: #000;
@@ -21,23 +21,25 @@
   &__box {
     width: 100%;
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
 
     &--highlight {
       @extend .leftbar__box;
-      background-color: lightgray;
+      background-color: #e1dfdd;
     }
   }
 
   &__task {
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-left: 0.7rem;
+    padding: 0;
   }
 
   &__img {
-    height: 100%;
-    width: 20px;
-    background-color: black;
+    height: 16px;
+    width: 16px;
   }
 }

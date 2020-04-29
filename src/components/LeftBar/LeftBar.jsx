@@ -1,5 +1,7 @@
 import React from "react";
 import "./Leftbar.scss";
+import tasks from '../../assets/svg/tasks-icon.svg';
+import people from '../../assets/svg/people-icon.svg';
 
 
 class Leftbar extends React.Component{
@@ -29,16 +31,15 @@ class Leftbar extends React.Component{
   }
 
   render() {
-    console.log(this.props.tasks)
     return (
       <section className="leftbar">
         <h3 className="leftbar__title">Productivity</h3>
         <div id='tasks' className="leftbar__box" onClick={this.props.toggle}>
-          <div className="leftbar__img"></div>
+          <img className="leftbar__img" src={tasks}/>
           <h5 className="leftbar__task">My Tasks</h5>
         </div>
         <div id='teams' className="leftbar__box" onClick={this.props.toggle}>
-          <div className="leftbar__img"></div>
+          <img className="leftbar__img" src={people}/>
           <h5 className="leftbar__task">My Teams</h5>
         </div>
       </section>);
