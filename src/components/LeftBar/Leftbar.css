@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.leftbar {
+  min-width: 19rem;
+  background-color: #fff;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftbar__title {
+  padding: 2rem 0 2rem 1.5rem;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.leftbar__box, .leftbar__box--highlight {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem 1rem;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.leftbar__box--highlight {
+  background-color: #e1dfdd;
+}
+
+.leftbar__task {
+  font-weight: normal;
+  font-size: 1.2rem;
+  margin-left: 0.7rem;
+  padding: 0;
+}
+
+.leftbar__img {
+  height: 16px;
+  width: 16px;
+}
+/*# sourceMappingURL=Leftbar.css.map */

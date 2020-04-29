@@ -1,0 +1,111 @@
+.myTeam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f3f2f1;
+  color: black;
+}
+
+.myTeam__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.myTeam__icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: lightgrey;
+  border-radius: 0.25rem;
+  margin: 0 1.75rem;
+  text-align: center;
+}
+
+.myTeam__teamSize {
+  width: 6rem;
+  margin-left: auto;
+  margin-right: 1rem;
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  -webkit-box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.075);
+          box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.075);
+}
+
+.myTeam__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myTeam__subHeader {
+  -webkit-box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.075);
+          box-shadow: -2px 2px 7px 0px rgba(0, 0, 0, 0.075);
+}
+
+.myTeam__name {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.myTeam__position {
+  margin-top: 0;
+  font-weight: lighter;
+  font-size: 0.75rem;
+}
+
+.myTeam__members {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+}
+
+.myTeam__buddy {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2rem;
+}
+
+.myTeam__dropDown {
+  background: white;
+  -webkit-box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.075);
+          box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.075);
+}
+
+.myTeam__message {
+  background-color: #69698B;
+  width: 7.25rem;
+  height: 2.25rem;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  -webkit-box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.075);
+          box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.075);
+}
+
+.myTeam__message:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=MyTeam.css.map */
