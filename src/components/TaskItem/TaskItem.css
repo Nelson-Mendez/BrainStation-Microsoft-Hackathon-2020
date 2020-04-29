@@ -20,21 +20,28 @@
           box-sizing: border-box;
   height: 1rem;
   width: 1rem;
-  border: 1px solid #464771;
+  border: 1px solid #464772;
+  border-radius: 2px;
 }
 
 .item__box--checked {
-  background-color: #464771;
+  background-color: #464772;
 }
 
 .item__title, .item__title--checked {
-  font-size: 1rem;
+  font-family: 'Segoe UI';
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: black;
   margin-left: 0.8rem;
-  font-weight: normal;
 }
 
 .item__title--checked {
-  color: #464771;
+  color: #464772;
 }
 /*# sourceMappingURL=TaskItem.css.map */
