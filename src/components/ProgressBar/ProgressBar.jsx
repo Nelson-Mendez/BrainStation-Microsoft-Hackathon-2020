@@ -3,12 +3,14 @@ import "./ProgressBar.scss";
 export default function ProgressBar(props) {
   return (
     <section className="progress__wrapper">
-      <h2 className="progress__title">PROGRESS</h2>
-      <div className="border"></div>
-      <div className="progress">
-        <div className="progress__in">{props.remaining}</div>
+      <div className='progress__box'>
+        <h2 className="progress__title">PROGRESS</h2>
       </div>
-      <p> {props.remaining} Tasks Left</p>
+      
+      <div className="progress">
+        <div className="progress__in" style={{ width: `${props.progress.percent}%`}}></div>
+      </div>
+      <p> {props.progress.left} Tasks Left</p>
     </section>
   );
 }

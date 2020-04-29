@@ -12,7 +12,10 @@ export default class Info extends React.Component {
     this.state = {
       modalShow: false,
       setModalShow: false,
-      progress: 0,
+      progress: {
+        left: 0,
+        percent: 0
+      },
       list: [
         {
           checked: true,
@@ -38,7 +41,19 @@ export default class Info extends React.Component {
     };
   }
 
-  //toChangeBranchName
+  componentDidMount() {
+    this.updateProgress();
+  }
+
+  updateProgress = () => {
+    let completed = this.state.list.filter(item => item.checked === true);
+    this.setState({
+      progress: {
+        left: this.state.list.length - completed.length,
+        percent: (completed.length/this.state.list.length)*100
+      }
+    })
+  }
 
   //In order to track progress check how many items in the list are checked and unchecked
 
@@ -50,6 +65,7 @@ export default class Info extends React.Component {
     this.setState({
       list: this.state.list,
     });
+    this.updateProgress();
   };
 
   render() {
@@ -93,7 +109,7 @@ export default class Info extends React.Component {
                 />
               ))}
             </ul>
-            <ProgressBar />
+            <ProgressBar progress={this.state.progress}/>
           </div>
         </div>
 
@@ -105,7 +121,9 @@ export default class Info extends React.Component {
               checked: false,
               position: this.state.list.length,
             });
-            // console.log(newList);
+            this.setState({
+              list: this.state.list
+            })
           }}
           show={this.state.modalShow}
           onHide={() => this.setState({ modalShow: false })}
