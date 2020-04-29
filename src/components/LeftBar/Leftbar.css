@@ -18,9 +18,15 @@
 }
 
 .leftbar__title {
-  font-size: 1.5rem;
-  padding: 2rem 0 2rem 1rem;
-  border-bottom: 1px solid lightgray;
+  padding: 2rem 0 2rem 1.5rem;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000000;
 }
 
 .leftbar__box, .leftbar__box--highlight {
