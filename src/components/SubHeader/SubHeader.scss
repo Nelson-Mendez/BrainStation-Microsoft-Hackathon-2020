@@ -1,0 +1,83 @@
+.sub {
+    height: 6.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #DFDFDF;
+    margin-bottom: 2.5rem;
+    padding: 0 2.6rem;
+
+    &__icon {
+        width: 49px;
+        height: 49px;
+        border-radius: 3px;
+        background-color: #dadeda;
+        font-family: 'Segoe UI';
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        color: #727972;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          
+    }
+
+    &__title {
+        margin-left: 2rem;
+        margin-bottom: 0;
+        font-family: 'Segoe UI';
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #000000;
+        position: relative;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__alert {
+        width: 14px;
+        height: 14px;
+        background-color: #ea2525;
+        border-radius: 100%;
+        position: absolute;
+        top: -1px;
+        left: 100%;
+    }
+
+    &__team {
+        width: 119px;
+        height: 36px;
+        background-color: #edebe9;
+        margin-right: 1rem;
+        margin-bottom: 0.6rem;
+        box-shadow: -2px 2px 7px 0px rgba(0,0,0,0.075);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI';
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        color: #323130;
+    }
+}
+
+.ellipsis {
+    height: 1.5rem;
+    margin-bottom: 0.6rem;
+}

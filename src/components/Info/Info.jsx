@@ -6,6 +6,10 @@ import edit from "../../assets/svg/edit.svg";
 import TaskItem from "../TaskItem/TaskItem";
 import ModalInput from "../ModalInput/ModalInput";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import {userData} from '../../mockData';
+import SubHeader from '../SubHeader/SubHeader';
+
+
 export default class Info extends React.Component {
   constructor(props) {
     super(props);
@@ -77,11 +81,16 @@ export default class Info extends React.Component {
       this.setState({ progress: this.state.list.length / x });
     }
 
+    let alert = true;
+    if (this.state.progress.percent === 100) {
+      alert = false
+    }
+
     return (
       <section className="info">
         {this.props.children}
         <div className="info__wrap">
-          <div className="info__bar">{/*My Tasks bar*/}</div>
+          <SubHeader title='My Tasks' userData={userData} alert={alert}/>
           <div className="info__container">
             <ul className="task">
               <li className="task__heading-box">

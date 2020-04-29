@@ -10,7 +10,7 @@ export default function ProgressBar(props) {
       <div className="progress">
         <div className="progress__in" style={{ width: `${props.progress.percent}%`}}></div>
       </div>
-      <p> {props.progress.left} Tasks Left</p>
+      <p className='progress__left'> {props.progress.left} Tasks Left</p>
     </section>
   );
 }

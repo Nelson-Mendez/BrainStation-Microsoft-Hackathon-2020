@@ -40,7 +40,7 @@ class Leftbar extends React.Component{
         </div>
         <div id='teams' className="leftbar__box" onClick={this.props.toggleTeams}>
           <img className="leftbar__img" src={people}/>
-          <h5 className="leftbar__task">My Teams</h5>
+          <h5 className="leftbar__task">My Team</h5>
         </div>
       </section>);
   }

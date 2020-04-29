@@ -13,6 +13,17 @@
     margin-left: 4rem;
   }
 
+  &__left {
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
   &__box {
     box-shadow: 0 4px 4px 0 rgba(186, 186, 186, 0.25);
     width: 100%;
