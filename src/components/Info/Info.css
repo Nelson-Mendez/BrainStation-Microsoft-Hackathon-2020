@@ -72,7 +72,28 @@
   display: flex;
 }
 
+.task__icon-box {
+  background-color: #fffcfc;
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .task__icon-box:nth-child(1) {
   margin-right: 0.5rem;
+}
+
+.task__icon-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=Info.css.map */

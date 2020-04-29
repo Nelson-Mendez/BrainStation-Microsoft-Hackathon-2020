@@ -31,7 +31,7 @@ export default function Info(props) {
             <li className='task__heading-box'>
               <h3 className='task__heading'>My Task List</h3>
               <div className='task__icon-wrap'>
-                <div className='task__icon-box'></div>
+                <div className='task__icon-box'><img src={plus} /></div>
                 <div className='task__icon-box'><img src={edit} /></div>
               </div>
             </li>

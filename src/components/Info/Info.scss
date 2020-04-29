@@ -55,8 +55,18 @@
   }
 
   &__icon-box {
+    background-color: #fffcfc;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &:nth-child(1) {
       margin-right: 0.5rem;
     }
+  }
+
+  &__icon-wrap {
+    display: flex;
   }
 }
